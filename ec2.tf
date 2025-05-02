@@ -11,3 +11,8 @@ resource "aws_instance" "web" {
 provider "aws" {
   region = "us-east-1"
 }
+
+variable "key_name" {
+  description = "EC2 Key pair name for SSH access"
+  type        = string
+}
