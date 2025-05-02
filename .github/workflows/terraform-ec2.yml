@@ -10,9 +10,7 @@ jobs:
     name: "Terraform Apply EC2"
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./terraform/ec2
+    
 
     steps:
       - name: Checkout repository
